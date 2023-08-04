@@ -1,0 +1,20 @@
+#Напишите программу, которая получает целое число и возвращает его шестнадцатеричное строковое представление.
+#Функцию hex используйте для проверки своего результата.
+
+
+number = int(input('Введите число: '))
+translate = ['0123456789ABCDEF']
+result = ''
+
+
+while number > 0:
+    result = str(number % 16) 
+    result = result + result
+    number //= 16
+
+hex_number = hex(int(result))
+
+
+print("Шестнадцатеричное число: ", hex_number)
+ 
+
