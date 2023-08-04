@@ -6,7 +6,6 @@ number = int(input('Введите число: '))
 translate = ['0123456789ABCDEF']
 result = ''
 
-
 while number > 0:
     result = str(number % 16) 
     result = result + result
